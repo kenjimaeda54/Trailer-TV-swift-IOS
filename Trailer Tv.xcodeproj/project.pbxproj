@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		818A264C28CA0EBD00F1F0AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818A264B28CA0EBD00F1F0AE /* AppDelegate.swift */; };
 		818A264E28CA0EBD00F1F0AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818A264D28CA0EBD00F1F0AE /* SceneDelegate.swift */; };
-		818A265028CA0EBD00F1F0AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818A264F28CA0EBD00F1F0AE /* ViewController.swift */; };
+		818A265028CA0EBD00F1F0AE /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818A264F28CA0EBD00F1F0AE /* MovieViewController.swift */; };
 		818A265328CA0EBD00F1F0AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 818A265128CA0EBD00F1F0AE /* Main.storyboard */; };
 		818A265528CA0EC200F1F0AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 818A265428CA0EC200F1F0AE /* Assets.xcassets */; };
 		818A265828CA0EC200F1F0AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 818A265628CA0EC200F1F0AE /* LaunchScreen.storyboard */; };
+		818A266028CA6F9F00F1F0AE /* TrailerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818A265F28CA6F9F00F1F0AE /* TrailerViewController.swift */; };
+		818A266228CA730300F1F0AE /* trailers.json in Resources */ = {isa = PBXBuildFile; fileRef = 818A266128CA730300F1F0AE /* trailers.json */; };
+		818A266428CA773400F1F0AE /* Trailer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818A266328CA773400F1F0AE /* Trailer.swift */; };
+		818A266628CA774500F1F0AE /* TrailerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818A266528CA774500F1F0AE /* TrailerManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		818A264828CA0EBD00F1F0AE /* Trailer Tv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trailer Tv.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		818A264B28CA0EBD00F1F0AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		818A264D28CA0EBD00F1F0AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		818A264F28CA0EBD00F1F0AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		818A264F28CA0EBD00F1F0AE /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
 		818A265228CA0EBD00F1F0AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		818A265428CA0EC200F1F0AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		818A265728CA0EC200F1F0AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		818A265928CA0EC200F1F0AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		818A265F28CA6F9F00F1F0AE /* TrailerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailerViewController.swift; sourceTree = "<group>"; };
+		818A266128CA730300F1F0AE /* trailers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = trailers.json; path = "../../../../Downloads/Arquivos TrailerFlix/trailers.json"; sourceTree = "<group>"; };
+		818A266328CA773400F1F0AE /* Trailer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trailer.swift; sourceTree = "<group>"; };
+		818A266528CA774500F1F0AE /* TrailerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailerManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +66,15 @@
 			children = (
 				818A264B28CA0EBD00F1F0AE /* AppDelegate.swift */,
 				818A264D28CA0EBD00F1F0AE /* SceneDelegate.swift */,
-				818A264F28CA0EBD00F1F0AE /* ViewController.swift */,
-				818A265128CA0EBD00F1F0AE /* Main.storyboard */,
-				818A265428CA0EC200F1F0AE /* Assets.xcassets */,
+				818A266128CA730300F1F0AE /* trailers.json */,
+				818A266328CA773400F1F0AE /* Trailer.swift */,
+				818A266528CA774500F1F0AE /* TrailerManager.swift */,
+				818A264F28CA0EBD00F1F0AE /* MovieViewController.swift */,
+				818A265F28CA6F9F00F1F0AE /* TrailerViewController.swift */,
 				818A265628CA0EC200F1F0AE /* LaunchScreen.storyboard */,
 				818A265928CA0EC200F1F0AE /* Info.plist */,
+				818A265128CA0EBD00F1F0AE /* Main.storyboard */,
+				818A265428CA0EC200F1F0AE /* Assets.xcassets */,
 			);
 			path = "Trailer Tv";
 			sourceTree = "<group>";
@@ -128,6 +140,7 @@
 				818A265828CA0EC200F1F0AE /* LaunchScreen.storyboard in Resources */,
 				818A265528CA0EC200F1F0AE /* Assets.xcassets in Resources */,
 				818A265328CA0EBD00F1F0AE /* Main.storyboard in Resources */,
+				818A266228CA730300F1F0AE /* trailers.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +151,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				818A265028CA0EBD00F1F0AE /* ViewController.swift in Sources */,
+				818A266428CA773400F1F0AE /* Trailer.swift in Sources */,
+				818A266028CA6F9F00F1F0AE /* TrailerViewController.swift in Sources */,
+				818A265028CA0EBD00F1F0AE /* MovieViewController.swift in Sources */,
 				818A264C28CA0EBD00F1F0AE /* AppDelegate.swift in Sources */,
+				818A266628CA774500F1F0AE /* TrailerManager.swift in Sources */,
 				818A264E28CA0EBD00F1F0AE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
