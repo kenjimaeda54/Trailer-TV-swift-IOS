@@ -81,6 +81,9 @@
                                 <color key="tintColor" red="0.5450980392" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Watch movie random"/>
+                                <connections>
+                                    <action selector="watchRandom:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I9n-qA-r0d"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -181,6 +184,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qh3-hz-Zc1"/>
+                    <connections>
+                        <outlet property="imgMovie" destination="hNC-Nt-x61" id="pEH-s7-vpx"/>
+                        <outlet property="labName" destination="FD9-wg-z1h" id="8Se-bG-SaZ"/>
+                        <outlet property="labRating" destination="HOQ-fp-4pM" id="GSd-gb-lNe"/>
+                        <outlet property="labYear" destination="HFu-YO-OIS" id="ArD-ig-iTb"/>
+                        <outlet property="viTrailer" destination="cl2-Om-eOA" id="F6E-nM-SJc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gDw-zY-FLF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

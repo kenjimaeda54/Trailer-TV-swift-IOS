@@ -20,10 +20,6 @@ class MovieViewController: UIViewController {
 		tabViewMovie.delegate = self
 		tabViewMovie.dataSource = self
 		trailerManager.loadTrailer()
-		
-
-		
-   
 	}
 	
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -35,8 +31,12 @@ class MovieViewController: UIViewController {
 	}
 	
 	@IBAction func watchRandom(_ sender: UIButton) {
+	  movieSelected(trailerManager.trailers?.randomElement())
 	}
 	
+	func movieSelected(_ trailer: Trailer?) {
+		performSegue(withIdentifier: "trailerSegue", sender: trailer)
+	}
 	
 }
 
@@ -60,8 +60,7 @@ extension MovieViewController: UITableViewDelegate,UITableViewDataSource {
 	}
 	 
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-		trailer = trailerManager.trailers?[indexPath.row]
-	  performSegue(withIdentifier: "trailerSegue", sender: trailer)
+	  movieSelected(trailerManager.trailers?[indexPath.row])
 	}
 }
 
