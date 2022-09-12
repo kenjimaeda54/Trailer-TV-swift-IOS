@@ -67,5 +67,27 @@ func watchMovie() {
 
 ```
 
+##
+- Para forçar  um sentido de tela
+- Usar logaritmo abaixo no app delegate
+
+
+```swift
+//Landscape
+func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
+  let deviceOrientation = UIInterfaceOrientationMask.landscape
+  return deviceOrientation
+}
+
+
+
+```
+
+
+
+
+
+
+
 
 
